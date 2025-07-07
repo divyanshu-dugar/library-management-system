@@ -80,7 +80,7 @@ const bebasNeue = localFont({
 
 ### 🧱 UI Library – shadcn/ui
 
-* Used `shadcn/ui` for form elements, buttons, cards, etc.
+* `shadcn/ui` for form elements, buttons, cards, etc.
 * Customizable components, powered by Tailwind and Radix UI.
 
 📎 [Installation Guide](https://ui.shadcn.com/docs/installation/next)
@@ -139,7 +139,7 @@ const bebasNeue = localFont({
 import { usePathname } from "next/navigation";
 
 const pathname = usePathname();
-const isActive = pathname === "/dashboard"; // Add class conditionally
+<Link href="/library" className={cn('text-base cursor-pointer capitalize', pathname === '/library' ? 'text-light-200' : 'text-light-100')}>
 ```
 
 </details>
@@ -150,10 +150,8 @@ const isActive = pathname === "/dashboard"; // Add class conditionally
 Utility function to conditionally join Tailwind class names.
 
 ```tsx
-// cn.ts
-export function cn(...classes: string[]) {
-  return classes.filter(Boolean).join(" ");
-}
+import { cn } from '@/lib/utils';
+<Link href="/library" className={cn('text-base cursor-pointer capitalize', pathname === '/library' ? 'text-light-200' : 'text-light-100')}>
 ```
 
 Used like:
