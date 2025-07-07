@@ -197,29 +197,3 @@ export default nextConfig;
 | `JSX does not allow prop`        | Check if the component is correctly imported, e.g. `import Image from 'next/image';` |
 
 ---
-
-## 📂 Folder Structure (WIP)
-
-```
-📁 app/
-  ┣ 📁 fonts/
-  ┣ 📁 images/
-  ┣ 📁 components/
-  ┣ 📁 lib/
-  ┣ 📁 styles/
-  ┗ layout.tsx
-
-📁 constants/
-📁 public/
-```
-
----
-
-## 💡 What's Next
-
-* 📖 Implement user authentication (students + admins)
-* 📊 Admin dashboard for book tracking
-* 📅 Borrowing logic, due dates, reminders
-* 📬 Email & workflow integration using Upstash
-
----
